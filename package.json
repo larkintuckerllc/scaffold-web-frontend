@@ -8,6 +8,8 @@
     "@types/react": "16.7.18",
     "@types/react-dom": "16.0.11",
     "ant-design-mobile-larkintuckerllc-react-scripts": "0.2.2",
+    "antd": "^3.11.6",
+    "antd-mobile": "^2.2.8",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "typescript": "3.2.2"
@@ -17,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "analyze": "ANT_DESIGN_MOBILE_LARKIN_TUCKER_LLC_ANALYZE=true react-scripts build"
+    "analyze": "ANT_DESIGN_MOBILE_LARKIN_TUCKER_LLC_ANALYZE=true react-scripts build",
+    "ts-lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "ts-lint-watch": "yarn ts-lint; chokidar 'src/**/*.{ts,tsx}' -c 'yarn ts-lint'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +31,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "chokidar-cli": "^1.2.1",
+    "less": "^3.9.0",
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0"
+  }
 }

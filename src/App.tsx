@@ -1,9 +1,11 @@
+import { Button } from 'antd';
+import { Button as ButtonMobile } from 'antd-mobile';
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo.svg';
 
 class App extends Component {
-  render() {
+  public render() {
     return (
       <div className="App">
         <header className="App-header">
@@ -20,6 +22,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Button type="primary">Hello</Button>
+        <ButtonMobile type="primary">Hello</ButtonMobile>
       </div>
     );
   }
